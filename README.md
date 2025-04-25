@@ -5,7 +5,16 @@ Level - 1
 1.Angular Basics and Project setup
 
     Q.What is Angular?
-    Ans:
+    Ans: Web application framework for Single Page Apps(SPAs)
+
+    Q.Benifits of Angular
+    Ans: Faster development,Faster Code generation(CLI),Unit tests ready, Opinionated - Similar architecture for many companies and teams
+
+    Q.Angular vs React
+    Ans: 
+    Angular is a framework,Has built-in CLI,Has tools and packages included for small medium scale apps,Is opinionated(better code style consistency)
+    React is library,does not have a CLI,requires to install additional packages even for small scale apps
+
 
 1.1.Angular Overview - 
 
