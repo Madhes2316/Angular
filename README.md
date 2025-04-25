@@ -19,8 +19,57 @@ Level - 1
 Creating Angular Application:
 
 1. Install Nodejs in your PC
+
 2. ng new first-ng-app --dry-run //--dry-run to see what wil happen if the command ran no actual changes will be made
+
 3. ng new first-ng-app
+    files generated for the above command:
+    CREATE first-ng-app/angular.json (2897 bytes)
+    CREATE first-ng-app/package.json (1083 bytes)
+    CREATE first-ng-app/README.md (1092 bytes)
+    CREATE first-ng-app/tsconfig.json (936 bytes)
+    CREATE first-ng-app/.editorconfig (290 bytes)
+    CREATE first-ng-app/.gitignore (590 bytes)
+    CREATE first-ng-app/tsconfig.app.json (277 bytes)
+    CREATE first-ng-app/tsconfig.spec.json (287 bytes)
+    CREATE first-ng-app/.vscode/extensions.json (134 bytes)
+    CREATE first-ng-app/.vscode/launch.json (490 bytes)
+    CREATE first-ng-app/.vscode/tasks.json (980 bytes)
+    CREATE first-ng-app/src/main.ts (256 bytes)
+    CREATE first-ng-app/src/favicon.ico (15086 bytes)
+    CREATE first-ng-app/src/index.html (309 bytes)
+    CREATE first-ng-app/src/styles.scss (81 bytes)
+    CREATE first-ng-app/src/app/app.component.html (20253 bytes)
+    CREATE first-ng-app/src/app/app.component.spec.ts (963 bytes)
+    CREATE first-ng-app/src/app/app.component.ts (385 bytes)
+    CREATE first-ng-app/src/app/app.component.scss (0 bytes)
+    CREATE first-ng-app/src/app/app.config.ts (235 bytes)
+    CREATE first-ng-app/src/app/app.routes.ts (80 bytes)
+    CREATE first-ng-app/src/assets/.gitkeep (0 bytes)
+
+4.ng new first-ng-app --inline-style --inline-template
+    files generated for the above command:
+    CREATE first-ng-app/angular.json (2964 bytes)
+    CREATE first-ng-app/package.json (1083 bytes)
+    CREATE first-ng-app/README.md (1092 bytes)
+    CREATE first-ng-app/tsconfig.json (936 bytes)
+    CREATE first-ng-app/.editorconfig (290 bytes)
+    CREATE first-ng-app/.gitignore (590 bytes)
+    CREATE first-ng-app/tsconfig.app.json (277 bytes)
+    CREATE first-ng-app/tsconfig.spec.json (287 bytes)
+    CREATE first-ng-app/.vscode/extensions.json (134 bytes)
+    CREATE first-ng-app/.vscode/launch.json (490 bytes)
+    CREATE first-ng-app/.vscode/tasks.json (980 bytes)
+    CREATE first-ng-app/src/main.ts (256 bytes)
+    CREATE first-ng-app/src/favicon.ico (15086 bytes)
+    CREATE first-ng-app/src/index.html (309 bytes)
+    CREATE first-ng-app/src/styles.scss (81 bytes)
+    CREATE first-ng-app/src/app/app.component.spec.ts (963 bytes)
+    CREATE first-ng-app/src/app/app.component.ts (420 bytes)
+    CREATE first-ng-app/src/app/app.config.ts (235 bytes)
+    CREATE first-ng-app/src/app/app.routes.ts (80 bytes)
+    CREATE first-ng-app/src/assets/.gitkeep (0 bytes)
+
 
 
 1.1.Angular Overview - 
