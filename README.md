@@ -36,7 +36,7 @@ Creating Angular Application:
     CREATE first-ng-app/.vscode/launch.json (490 bytes)
     CREATE first-ng-app/.vscode/tasks.json (980 bytes)
     CREATE first-ng-app/src/main.ts (256 bytes)
-    CREATE first-ng-app/src/favicon.ico (15086 bytes)
+    CREATE first-ng-app/src/favicon.ico (15086 bytes) 
     CREATE first-ng-app/src/index.html (309 bytes)
     CREATE first-ng-app/src/styles.scss (81 bytes)
     CREATE first-ng-app/src/app/app.component.html (20253 bytes)
