@@ -50,7 +50,7 @@ Creating Angular Application:
     CREATE first-ng-app/src/assets/.gitkeep (0 bytes)
     ```
 
-4.ng new first-ng-app --inline-style --inline-template
+4. ng new first-ng-app --inline-style --inline-template
 
     ```
     files generated for the above command:
@@ -76,7 +76,35 @@ Creating Angular Application:
     CREATE first-ng-app/src/assets/.gitkeep (0 bytes)
     ```
 
+5. Main entry point is index.html - <app-root></app-root> which will render app.component.ts (top level,root component)
 
+6. main.ts - This file creates or generates angular application using app component
+
+7. styles.scss - where global styles are added
+
+8. Command to generate a new component under src/app parent folder
+
+```
+ng g c header
+````
+This will create component under src/app/header
+
+9. Command to generate a new component under src/app's subfolder
+
+```
+ng g c components/header
+````
+This will create component under src/app/components/header
+
+10. Since initially we created the angular project with ```ng new first-ng-app --inline-style --inline-template``` command
+    
+    so whenever we create a new component it wont generate html and css files, So in order to generate those remove the below properties from angular.json
+    ```
+    "inlineTemplate": true,
+    "inlineStyle": true,
+    ```
+
+Interview Stuffs
 
 1.1.Angular Overview - 
 
