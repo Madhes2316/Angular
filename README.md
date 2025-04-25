@@ -16,6 +16,13 @@ Level - 1
     React is library,does not have a CLI,requires to install additional packages even for small scale apps
 
 
+Creating Angular Application:
+
+1. Install Nodejs in your PC
+2. ng new first-ng-app --dry-run //--dry-run to see what wil happen if the command ran no actual changes will be made
+3. ng new first-ng-app
+
+
 1.1.Angular Overview - 
 
                        Angular vs AngularJS 
