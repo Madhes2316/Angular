@@ -104,6 +104,22 @@ This will create component under src/app/components/header
     "inlineStyle": true,
     ```
 
+Q.Angular Data-Binding
+Ans: Binding data between the typescript class of the component and the component's template
+
+Data-Binding using Signal
+```
+In TS file : title = signal("My first Angular app");
+In HTML file : {{title()}}
+```
+
+Data Binding using tradional non signal way
+```
+In TS file : title = "My first Angular app";
+In HTML file : {{title}}
+```
+
+
 Interview Stuffs
 
 1.1.Angular Overview - 
