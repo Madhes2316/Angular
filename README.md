@@ -23,6 +23,8 @@ Creating Angular Application:
 2. ng new first-ng-app --dry-run //--dry-run to see what wil happen if the command ran no actual changes will be made
 
 3. ng new first-ng-app
+
+    ```
     files generated for the above command:
     CREATE first-ng-app/angular.json (2897 bytes)
     CREATE first-ng-app/package.json (1083 bytes)
@@ -46,8 +48,11 @@ Creating Angular Application:
     CREATE first-ng-app/src/app/app.config.ts (235 bytes)
     CREATE first-ng-app/src/app/app.routes.ts (80 bytes)
     CREATE first-ng-app/src/assets/.gitkeep (0 bytes)
+    ```
 
 4.ng new first-ng-app --inline-style --inline-template
+
+    ```
     files generated for the above command:
     CREATE first-ng-app/angular.json (2964 bytes)
     CREATE first-ng-app/package.json (1083 bytes)
@@ -69,6 +74,7 @@ Creating Angular Application:
     CREATE first-ng-app/src/app/app.config.ts (235 bytes)
     CREATE first-ng-app/src/app/app.routes.ts (80 bytes)
     CREATE first-ng-app/src/assets/.gitkeep (0 bytes)
+    ```
 
 
 
