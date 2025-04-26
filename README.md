@@ -233,6 +233,69 @@ Below code snippet is to open pages based on path inside array
     opening todos page with header component on top
 ```
 
+Q.Services in Angular
+
+Ans: Angular Services are used to encapsulate data,making Http Calls or perform any task that is not directly related to data rendering
+
+Creating an Angular Service:
+```
+command to create service files: 
+ng g service services/todos
+
+@Injectable({
+  providedIn: 'root'
+})
+
+the above code indicates that the service can be used anywhere in the component
+
+Another way we can use the service in a component is
+in .ts file:
+providers:[TodosService]
+
+Adding the service as providers in the specific component
+
+Since already @Injectable root is there we can just use the service like below
+export class TodosService {
+  todoItems: Array<Todo> = [
+    {
+      userId: 1,
+      completed: false,
+      title: 'Groceries',
+      id: 0
+    },
+    {
+      userId: 1,
+      completed: false,
+      title: 'Hair Cut',
+      id: 1
+    }
+  ];
+}
+
+in .ts file of any component which want to consume the service things
+export class TodosComponent implements OnInit{
+
+  todoService = inject(TodosService);
+  todoItemsFromService = signal<Array<Todo>>([]);
+
+  ngOnInit(): void {
+    console.log(this.todoService.todoItems);
+    this.todoItemsFromService.set(this.todoService.todoItems);
+  }
+}
+
+in .html file:
+<p>{{todoItemsFromService()[0].title}}</p>
+<p>{{todoItemsFromService()[0].id}}</p>
+
+@for (item of todoItemsFromService(); track item.id) {
+    <p>{{item.title}}</p>
+}
+
+```
+
+
+
 
 Interview Stuffs
 
