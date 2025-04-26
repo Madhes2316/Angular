@@ -119,6 +119,28 @@ In TS file : title = "My first Angular app";
 In HTML file : {{title}}
 ```
 
+Q.What is Parent Child Communication
+Ans: It is process of passing data from Parent component to Child Component and ViceVersa
+```
+Parent Component:
+.ts file:
+export class ParentComponent {
+  homeMsg = signal("Hello from Hello Component ts file");
+}
+
+.html file:
+<app-child [message]="homeMsg()" />
+
+Child Component:
+.ts file:
+export class ChildComponent {
+  message = input("Hello Hello!")
+}
+
+.html file:
+<p>{{message()}}</p>
+```
+
 
 Interview Stuffs
 
