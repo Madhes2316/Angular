@@ -2,6 +2,12 @@
 
 <h1>Todo List from Mock API</h1>
 
+@if (!todoItemsFromService().length) {
+    <p>Loading...</p>
+}
+
+<p *ngIf="!todoItemsFromService().length">Loading....</p>
+
 <ul>
 @for (item of todoItemsFromService(); track item.id) {
     <li>

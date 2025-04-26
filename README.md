@@ -359,6 +359,32 @@ in html file:
 </ul>
 ```
 
+Q.Angular Directives
+
+Ans: Angular Directives allow you to add additional behaviour to elements in our Angular applications.
+
+Types of Angular Directives
+```
+Components
+Attribute directives
+Structural directives
+```
+
+In-Built directives:
+```
+in .ts file:
+imports: [NgIf],
+
+in .html file:
+<p *ngIf="!todoItemsFromService().length">Loading....</p>
+
+or .html file: latest addition instead of traditional way
+@if (!todoItemsFromService().length) {
+    <p>Loading...</p>
+}
+
+```
+
 
 
 Interview Stuffs
