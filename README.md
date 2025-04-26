@@ -105,6 +105,7 @@ This will create component under src/app/components/header
     ```
 
 Q.Angular Data-Binding
+
 Ans: Binding data between the typescript class of the component and the component's template
 
 Data-Binding using Signal
@@ -120,6 +121,7 @@ In HTML file : {{title}}
 ```
 
 Q.What is Parent Child Communication
+
 Ans: It is process of passing data from Parent component to Child Component and ViceVersa
 ```
 Parent Component:
