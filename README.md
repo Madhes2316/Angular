@@ -143,6 +143,34 @@ export class ChildComponent {
 <p>{{message()}}</p>
 ```
 
+Q. Angular Event listeners
+
+Ans: There are a lot of events that can be incorporated in html and ts files, for example keyup,keydown,click etc
+
+Example 1 without param:
+```
+.html file
+<input type="text" name="" id="" (keyup)="KeyUpHandler()">
+
+.ts file
+ KeyUpHandler(){
+    console.log("Some key has be pressed");
+  }
+```
+The above code will console log the string whenever any key is pressed in html input field  
+
+Example 2 with param:
+```
+.html file
+<input type="text" name="" id="" (keyup)="KeyUpHandlerWithEvent($event)">
+
+.ts file
+KeyUpHandlerWithEvent(event:KeyboardEvent){
+    console.log(`The Event from html is ${event.key}`);
+  }
+```
+The above code will console log the key that is pressed html input field
+
 
 Interview Stuffs
 
