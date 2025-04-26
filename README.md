@@ -181,7 +181,7 @@ Routing Basic in Angular:
 ```
 Open app.routes.ts
 Below code snippet is to open pages based on path inside array
-{
+    {
         path:'',
         pathMatch:'full',
         loadComponent : ()=>{
@@ -189,7 +189,7 @@ Below code snippet is to open pages based on path inside array
                 return m.HomeComponent;
             })
         }
-    },
+    },  
     {
         path:'home',
         pathMatch:'full',
@@ -210,12 +210,14 @@ Below code snippet is to open pages based on path inside array
     },
 
     In app.component.ts
+    "
      template: `
         <app-header/>
         <main>
         <router-outlet />
         </main>
     `
+    "
 
     Here <router-outlet /> indicates below header component open any component when any page path matches
     so in Header if we add the below code
