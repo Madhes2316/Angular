@@ -1,6 +1,11 @@
-<p>{{todoItemsFromService()[0].title}}</p>
-<p>{{todoItemsFromService()[0].id}}</p>
 
+
+<h1>Todo List from Mock API</h1>
+
+<ul>
 @for (item of todoItemsFromService(); track item.id) {
-    <p>{{item.title}}</p>
+    <li>
+        <input type="checkbox" name="" id="" [value]="item.completed">{{item.title}}
+    </li>
 }
+</ul>

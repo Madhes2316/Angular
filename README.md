@@ -292,8 +292,72 @@ in .html file:
     <p>{{item.title}}</p>
 }
 
+
+Here <Todo> is a model from a model file:
+export type Todo = {
+    userId:number,
+    completed:boolean,
+    title:string,
+    id:number
+}
+
 ```
 
+Q.Making http calls with Angular Services
+
+Ans: Provide HTTP module/providers in the app config using ProvideHttpClient()
+     Inject HttpClient Service
+     Use the http methods
+
+```
+1.Go to app.config.ts
+    Inside Providers[] add provideHttpClient()
+Adding this here allows us to use http method calls from app root and all its children
+So basically all the components,services
+
+2.In the service add the below code
+export class TodosService {
+  http = inject(HttpClient);
+  
+  getTodoFromAPI(){
+    const url = `https://jsonplaceholder.typicode.com/todos`;
+    let response = this.http.get<Array<Todo>>(url);
+    return response;
+  }
+}
+
+3.And in the component which consumes the http response add this code
+.ts file:
+export class TodosComponent implements OnInit{
+
+  todoService = inject(TodosService);
+  todoItemsFromService = signal<Array<Todo>>([]);
+
+  ngOnInit(): void {
+    this.todoService.getTodoFromAPI().pipe(
+      catchError((err)=>{
+        console.log(err);
+        throw err;
+      })
+    ).subscribe(
+      (todoItems) =>{
+        this.todoItemsFromService.set(todoItems);
+      }
+    )
+  }
+}
+
+in html file:
+<h1>Todo List from Mock API</h1>
+
+<ul>
+@for (item of todoItemsFromService(); track item.id) {
+    <li>
+        <input type="checkbox" name="" id="" [value]="item.completed">{{item.title}}
+    </li>
+}
+</ul>
+```
 
 
 
