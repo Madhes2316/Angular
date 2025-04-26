@@ -1,17 +1,25 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet,HeaderComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-    <p style="background-color: greenyellow;">Hello guyss</p>
-    <router-outlet></router-outlet>
+    <app-header/>
+    <main>
+      <router-outlet />
+    </main>
   `,
-  styles: [],
+  styles: [
+    `
+    main{
+      padding: 16px;
+    }
+    `
+  ],
 })
 export class AppComponent {
   title = 'first-ng-app';

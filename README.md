@@ -172,6 +172,66 @@ KeyUpHandlerWithEvent(event:KeyboardEvent){
 The above code will console log the key that is pressed html input field
 
 
+Q.Routing in Angular
+
+Ans: Angular is a single page application,using routes we can still define different pages that the user can navigate to.
+     The browser only loads the bundles related to the route that has accessed
+
+Routing Basic in Angular:
+```
+Open app.routes.ts
+Below code snippet is to open pages based on path inside array
+{
+        path:'',
+        pathMatch:'full',
+        loadComponent : ()=>{
+            return import('../app/home/home.component').then((m)=>{
+                return m.HomeComponent;
+            })
+        }
+    },
+    {
+        path:'home',
+        pathMatch:'full',
+        loadComponent : ()=>{
+            return import('../app/home/home.component').then((m)=>{
+                return m.HomeComponent;
+            })
+        }
+    },
+    {
+        path:'todos',
+        pathMatch:'full',
+        loadComponent : ()=>{
+            return import('../app/todos/todos.component').then((m)=>{
+                return m.TodosComponent;
+            })
+        }
+    },
+
+    In app.component.ts
+     template: `
+        <app-header/>
+        <main>
+        <router-outlet />
+        </main>
+    `
+
+    Here <router-outlet /> indicates below header component open any component when any page path matches
+    so in Header if we add the below code
+
+    in .ts file:
+    imports: [RouterLink],
+
+    in .html file:
+    <nav routerLink="/todos">Todos</nav>
+
+    so whenever Todos text is clicked localhost:4200 - updates to localhost:4200/todos
+    opening todos page with header component on top
+
+    ```
+
+
 Interview Stuffs
 
 1.1.Angular Overview - 
