@@ -228,7 +228,6 @@ Below code snippet is to open pages based on path inside array
 
     so whenever Todos text is clicked localhost:4200 - updates to localhost:4200/todos
     opening todos page with header component on top
-
     ```
 
 
