@@ -178,6 +178,7 @@ Ans: Angular is a single page application,using routes we can still define diffe
      The browser only loads the bundles related to the route that has accessed
 
 Routing Basic in Angular:
+
 ```
 Open app.routes.ts
 Below code snippet is to open pages based on path inside array
@@ -231,6 +232,7 @@ Below code snippet is to open pages based on path inside array
     so whenever Todos text is clicked localhost:4200 - updates to localhost:4200/todos
     opening todos page with header component on top
     ```
+
 
 
 Interview Stuffs
