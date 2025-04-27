@@ -385,6 +385,11 @@ or .html file: latest addition instead of traditional way
 
 ```
 
+Custom directives:
+```
+Command to create directive : ng g directive directives/highlight-completed-todo
+```
+
 
 
 Interview Stuffs
