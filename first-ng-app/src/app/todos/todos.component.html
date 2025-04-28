@@ -10,8 +10,6 @@
 
 <ul>
 @for (item of todoItemsFromService(); track item.id) {
-    <li>
-        <input type="checkbox" name="" id="" [value]="item.completed">{{item.title}}
-    </li>
+    <app-todo-item [todoItems]="item"/>
 }
 </ul>
