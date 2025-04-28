@@ -13,13 +13,13 @@ export class HighlightCompletedTodoDirective {
   stylesEffect = effect(()=>{
     if(this.isCompleted()){
       this.el.nativeElement.style.textDecoration = 'line-through';
-      this.el.nativeElement.style.backgroundColor = 'red';
+      this.el.nativeElement.style.backgroundColor = 'yellow';
     }
     else{
       this.el.nativeElement.style.textDecoration = 'none';
       this.el.nativeElement.style.backgroundColor = '';
-      this.el.nativeElement.style.backgroundColor = 'red';
     }
   })
+
 
 }

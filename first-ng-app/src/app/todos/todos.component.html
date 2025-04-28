@@ -8,8 +8,11 @@
 
 <p *ngIf="!todoItemsFromService().length">Loading....</p>
 
+<form action="">
+    <input type="text" name="" id="" ngModel="SearchTerm()" [(ngModel)]="searchTerm" name="searchTerm">
+</form>
 <ul>
-@for (item of todoItemsFromService(); track item.id) {
-    <app-todo-item [todoItems]="item"/>
+@for (item of todoItemsFromService()  | filterTodoPipe : searchTerm(); track item.id) {
+    <app-todo-item [todoItems]="item" (todoToggled)="updateCheckBox($event)" />
 }
 </ul>
